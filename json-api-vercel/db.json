@@ -1,11 +1,14 @@
 {
   "users": [
-    { "id": 1, "name": "Huy", "email": "huy@gmail.com" }
+    { "id": 1, "username": "huynguyen", "password": "123456", "email": "huy@example.com" },
+    { "id": 2, "username": "minhtran", "password": "654321", "email": "minh@example.com" }
   ],
   "posts": [
-    { "id": 1, "title": "Hello", "author": "Huy" }
+    { "id": 1, "userId": 1, "content": "Hello world!", "likes": 5 },
+    { "id": 2, "userId": 2, "content": "JSON Server trên Vercel nè 🚀", "likes": 10 }
   ],
   "comments": [
-    { "id": 1, "postId": 1, "content": "Hay quá!" }
+    { "id": 1, "postId": 1, "userId": 2, "content": "Hay quá!" },
+    { "id": 2, "postId": 2, "userId": 1, "content": "Tuyệt vời 👍" }
   ]
 }
