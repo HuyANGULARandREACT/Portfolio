@@ -5,6 +5,6 @@ const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
 server.use(router)
-server.listen(8080, () => {
-  console.log('JSON Server is running')
-})
+
+// Export function cho Vercel
+module.exports = server
