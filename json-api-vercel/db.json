@@ -1,34 +1,30 @@
 {
-  "user_vi": [
-    {
-      "id": "1",
-      "name": "Nguyễn Gia Huy",
-      "avatar": "https://i.pravatar.cc/150?img=3",
-      "title": "Lập trình viên Frontend ",
-      "bio": "Sinh viên FPT, yêu thích Web Development.",
-      "email": "huy@example.com",
-      "socials": {
-        "github": "https://github.com/huy",
-        "linkedin": "https://linkedin.com/in/huy",
-        "facebook": "https://facebook.com/huy"
-      }
+  "user_vi": {
+    "id": "1",
+    "name": "Nguyễn Gia Huy",
+    "avatar": "https://i.pravatar.cc/150?img=3",
+    "title": "Lập trình viên Frontend ",
+    "bio": "Sinh viên FPT, yêu thích Web Development.",
+    "email": "huy@example.com",
+    "socials": {
+      "github": "https://github.com/huy",
+      "linkedin": "https://linkedin.com/in/huy",
+      "facebook": "https://facebook.com/huy"
     }
-  ],
-  "user_en": [
-    {
-      "id": "1",
-      "name": "Nguyen Gia Huy",
-      "avatar": "https://i.pravatar.cc/150?img=3",
-      "title": "Frontend Developer",
-      "bio": "Sinh viên FPT, yêu thích Web Development.",
-      "email": "huy@example.com",
-      "socials": {
-        "github": "https://github.com/huy",
-        "linkedin": "https://linkedin.com/in/huy",
-        "facebook": "https://facebook.com/huy"
-      }
+  },
+  "user_en": {
+    "id": "1",
+    "name": "Nguyen Gia Huy",
+    "avatar": "https://i.pravatar.cc/150?img=3",
+    "title": "Frontend Developer",
+    "bio": "FPT student, passionate about Web Development.",
+    "email": "huy@example.com",
+    "socials": {
+      "github": "https://github.com/huy",
+      "linkedin": "https://linkedin.com/in/huy",
+      "facebook": "https://facebook.com/huy"
     }
-  ],
+  },
   "skills": [
     {
       "id": "1",
