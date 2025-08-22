@@ -11,7 +11,6 @@ const Home = () => {
         const data = await getUserData();
         setUserData(data);
         console.log(data);
-        console.log(data[0].name);
       } catch (error) {
         console.error("Error fetching user data:", error);
       }
@@ -20,9 +19,16 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
-    
-    </div>
+    <Container >
+      <div className="mt-5 border-2 p-5">
+        {userData && (
+          <>
+            <h1>{userData.bio}</h1>
+            
+          </>
+        )}
+      </div>
+    </Container>
   );
 };
 
