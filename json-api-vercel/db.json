@@ -1,0 +1,11 @@
+{
+  "users": [
+    { "id": 1, "name": "Huy", "email": "huy@gmail.com" }
+  ],
+  "posts": [
+    { "id": 1, "title": "Hello", "author": "Huy" }
+  ],
+  "comments": [
+    { "id": 1, "postId": 1, "content": "Hay quá!" }
+  ]
+}
