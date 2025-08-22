@@ -1,14 +1,56 @@
 {
   "users": [
-    { "id": 1, "username": "huynguyen", "password": "123456", "email": "huy@example.com" },
-    { "id": 2, "username": "minhtran", "password": "654321", "email": "minh@example.com" }
+    {
+      "id": "1",
+      "name": "Nguyen Gia Huy",
+      "avatar": "https://i.pravatar.cc/150?img=3",
+      "title": "Frontend Developer",
+      "bio": "Sinh viên FPT, yêu thích Web Development.",
+      "email": "huy@example.com",
+      "socials": {
+        "github": "https://github.com/huy",
+        "linkedin": "https://linkedin.com/in/huy",
+        "facebook": "https://facebook.com/huy"
+      }
+    }
   ],
-  "posts": [
-    { "id": 1, "userId": 1, "content": "Hello world!", "likes": 5 },
-    { "id": 2, "userId": 2, "content": "JSON Server trên Vercel nè 🚀", "likes": 10 }
+  "skills": [
+    {
+      "id": "1",
+      "name": "ReactJS",
+      "level": "Intermediate",
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+    }
   ],
-  "comments": [
-    { "id": 1, "postId": 1, "userId": 2, "content": "Hay quá!" },
-    { "id": 2, "postId": 2, "userId": 1, "content": "Tuyệt vời 👍" }
+  "projects": [
+    {
+      "id": "1",
+      "title": "Student Management App",
+      "description": "Ứng dụng quản lý sinh viên với Java.",
+      "image": "https://via.placeholder.com/300",
+      "demo": "https://myproject.vercel.app",
+      "github": "https://github.com/huy/student-app",
+      "techStack": ["Java", "SQL", "Swing"]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "1",
+      "company": "FPT Software",
+      "position": "Intern Frontend Developer",
+      "startDate": "2024-06",
+      "endDate": "2024-09",
+      "description": "Tham gia phát triển giao diện web nội bộ."
+    }
+  ],
+  "educations": [
+    {
+      "id": "1",
+      "school": "Đại học FPT",
+      "degree": "Kỹ thuật Phần mềm",
+      "startDate": "2023-09",
+      "endDate": "2027-06",
+      "description": "Đang theo học năm 2, chuyên ngành Software Engineering."
+    }
   ]
 }
