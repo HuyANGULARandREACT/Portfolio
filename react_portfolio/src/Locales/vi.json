@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "title": "Xin chào, tôi là Gia Huy",
+    "subtitle": "Một lập trình viên đầy đam mê"
+  },
+  "footer": {
+    "rights": "Bảo lưu mọi quyền"
+  }
+}
