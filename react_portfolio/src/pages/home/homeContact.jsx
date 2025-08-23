@@ -4,6 +4,7 @@ import { useTheme } from "../../context/themeContext";
 import { Container } from "react-bootstrap";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import emailjs from "emailjs-com";
 
 const HomeContact = () => {
   const { t } = useLanguage();
@@ -67,14 +68,52 @@ const HomeContact = () => {
     };
   }, []);
 
-  // Handle form submission
-  const handleSubmit = (values, { setSubmitting, resetForm }) => {
-    console.log("Form submitted:", values);
-    setTimeout(() => {
-      alert(t("contact.successMessage") || "Message sent successfully!");
+  // Handle form submission with EmailJS
+  const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+    try {
+      // EmailJS configuration
+      const serviceId = "service_5km24mb";
+      const templateId = "template_isx19bk"; // You'll need to create this template in EmailJS
+      const userId = "5-RS8V7j53cHTp0VW"; // You'll need to get this from EmailJS dashboard
+
+      // Template parameters for EmailJS
+      const templateParams = {
+        from_name: values.name,
+        from_email: values.email,
+        phone: values.phone,
+        message: values.message,
+        to_name: "Nguyen Gia Huy", // Your name
+      };
+
+      // Send email using EmailJS
+      const response = await emailjs.send(
+        serviceId,
+        templateId,
+        templateParams,
+        userId
+      );
+
+      console.log("Email sent successfully:", response);
+
+      // Show success message
+      alert(
+        t("contact.successMessage") ||
+          "Message sent successfully! I'll get back to you soon."
+      );
+
+      // Reset form
       resetForm();
+    } catch (error) {
+      console.error("Failed to send email:", error);
+
+      // Show error message
+      alert(
+        t("contact.errorMessage") ||
+          "Failed to send message. Please try again or contact me directly."
+      );
+    } finally {
       setSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
