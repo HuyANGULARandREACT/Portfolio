@@ -16,16 +16,36 @@ const NavBar = () => {
   const navBg = theme === "light" ? "#f8f9fa" : "#23272b";
 
   React.useEffect(() => {
-    const sections = ["home", "about", "skills", "certificates", "projects"];
+    const sections = [
+      "home",
+      "about",
+      "skills",
+      "certificates",
+      "projects",
+      "contact",
+    ];
     const observer = new IntersectionObserver(
       (entries) => {
+        // Find the section with the highest intersection ratio
+        let maxRatio = 0;
+        let activeId = "home";
+
         entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-            setActiveSection(entry.target.id);
+          if (entry.intersectionRatio > maxRatio) {
+            maxRatio = entry.intersectionRatio;
+            activeId = entry.target.id;
           }
         });
+
+        // Only update if we have a significant intersection
+        if (maxRatio > 0.3) {
+          setActiveSection(activeId);
+        }
       },
-      { threshold: 0.5 }
+      {
+        threshold: [0, 0.1, 0.3, 0.5, 0.7, 1],
+        rootMargin: "-100px 0px -50% 0px",
+      }
     );
 
     sections.forEach((section) => {
@@ -37,6 +57,9 @@ const NavBar = () => {
   }, []);
 
   const scrollToSection = (sectionId) => {
+    // Immediately update active section when clicked
+    setActiveSection(sectionId);
+
     const element = document.getElementById(sectionId);
     if (element) {
       const navbarHeight = 70; // navbar height
@@ -50,10 +73,15 @@ const NavBar = () => {
 
   const getLinkStyle = (sectionId) => ({
     color: themeStyle.text,
-    textDecoration: activeSection === sectionId ? "underline" : "none",
-    textUnderlineOffset: "4px",
+    textDecoration: "none",
+    borderBottom:
+      activeSection === sectionId
+        ? "2px solid #007bff"
+        : "2px solid transparent",
+    paddingBottom: "2px",
     fontWeight: activeSection === sectionId ? "bold" : "normal",
     cursor: "pointer",
+    transition: "all 0.3s ease",
   });
 
   return (
@@ -123,7 +151,7 @@ const NavBar = () => {
           >
             {language === "en" ? "EN" : "VI"}
           </button>
-          <button
+          {/* <button
             onClick={toggleTheme}
             style={{
               marginRight: 16,
@@ -133,7 +161,7 @@ const NavBar = () => {
             }}
           >
             {theme === "light" ? <MdOutlineNightlight /> : <PiSunHorizonBold />}
-          </button>
+          </button> */}
         </div>
       </Container>
     </Navbar>

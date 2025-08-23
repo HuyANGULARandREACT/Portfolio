@@ -63,12 +63,23 @@ const HomeCertificate = () => {
           {certificates.map((file) => (
             <div
               key={file}
-              className="certificate-card rounded-lg border border-gray-600 bg-black/60 flex flex-col items-center justify-center p-2 hover:shadow-lg transition"
+              className="certificate-card rounded-lg border border-gray-600 bg-black/60 flex flex-col items-center justify-center p-2 transition-all duration-300 hover:scale-105"
               style={{
                 minHeight: 220,
                 opacity: 0,
                 transform: "translateY(30px)",
-                transition: "opacity 0.6s ease, transform 0.6s ease",
+                transition:
+                  "opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease, border-color 0.3s ease",
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow =
+                  "0 0 30px rgba(0, 123, 255, 0.5)";
+                e.currentTarget.style.borderColor = "#007bff";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = "";
+                e.currentTarget.style.borderColor = "#6b7280";
               }}
             >
               <embed

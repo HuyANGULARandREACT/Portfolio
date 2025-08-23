@@ -9,6 +9,7 @@ import { useLanguage } from "../../context/languageContext";
 import CodingAnimation from "../../components/CodingAnimation";
 import HomeProjects from "./homeProjects";
 import useLazyLoad from "../../hooks/useLazyLoad";
+import HomeContact from "./homeContact";
 
 const Home = () => {
   const { t } = useLanguage();
@@ -22,7 +23,8 @@ const Home = () => {
 
   return (
     <Container>
-       <div
+      <Container className="mt-20 mb-50" id="home">
+        <div
           className="transition-section"
           style={{
             marginTop: "120px",
@@ -118,7 +120,6 @@ const Home = () => {
             <span className="cursor">_</span>
           </div>
         </div>
-      <Container className="mt-20 mb-50" id="home">
         <h2 className="text-3xl font-bold  flex items-center gap-2 mt-5">
           {t("page.greeting")}
           <span
@@ -184,7 +185,6 @@ const Home = () => {
             }
           });
         `}</script>
-       
       </Container>
 
       {/* Transition Section with Coding-themed Animated Effects */}
@@ -348,16 +348,24 @@ const Home = () => {
       <div
         id="contact"
         style={{
-          height: "400px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          minHeight: "60vh",
+          paddingTop: "2rem",
+          paddingBottom: "2rem",
         }}
       >
         {shouldLoadContact ? (
-          <h2>Contact Section Coming Soon...</h2>
+          <HomeContact />
         ) : (
-          <div>Loading Contact...</div>
+          <div
+            style={{
+              height: "400px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            Loading Contact...
+          </div>
         )}
       </div>
     </Container>

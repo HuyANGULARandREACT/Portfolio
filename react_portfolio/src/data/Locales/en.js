@@ -10,12 +10,62 @@ const en = {
   "page.skills": "Skills",
   "nav.link": "Link",
   "page.greeting": "Greeting",
+  "page.contact": "Contact",
+  "contact.title": "Contact With Me",
+  "contact.name": "Your Name",
+  "contact.email": "Your Email",
+  "contact.phone": "Your Phone Number",
+  "contact.message": "Your Message",
+  "contact.subtitle": "Please fill out the form below to get in touch with me.",
+  "contact.namePlaceholder": "Enter your full name",
+  "contact.emailPlaceholder": "Enter your email address",
+  "contact.phonePlaceholder": "Enter your phone number",
+  "contact.messagePlaceholder": "Enter your message",
   certiDetail: "View Detail",
   greeting:
     "Hello! Welcome to my portfolio. This is where I share my journey of learning, training, and growing in the field of software engineering. Here, you will find my personal projects, the skills I am developing, as well as a part of my story on the path to becoming a professional developer.",
   bio: "My name is Nguyen Gia Huy, I am currently a student at FPT University, majoring in software engineering. I am interested in modern web technology, especially ReactJS and UI/UX. My goal is to become a good Frontend programmer, able to build quality products, easy to use and bring value to users.",
   title: "Frontend Developer",
   name: "Nguyen Gia Huy",
+  projects: [
+    {
+      id: 1,
+      name: "HIV Information System",
+      image: "/HIV/hivHomePage.png",
+      description:
+        "Healthcare information management system, a digital health platform that allows users to schedule medical appointments online. Users can easily create patient profiles, choose doctors for consultations, and select appointment times to save time and minimize waiting at the hospital. ",
+      technologies: [
+        "React",
+        "SpringBoot",
+        "MySQL",
+        "Redis",
+        "Docker",
+        "JWT",
+        "Cloudinary",
+        "Stripe",
+      ],
+    },
+    {
+      id: 2,
+      name: "Mini Social Network",
+      image: "/miniSocial/socialHomePage.png",
+      description:
+        "A social network platform for connecting people, allowing users to make friends, and comment.",
+      technologies: ["React", "JSON Server"],
+      demoLink: "#",
+      codeLink: "#",
+    },
+    {
+      id: 3,
+      name: "Portfolio Website",
+      image: "/portfolio/portfolioHomePage.png",
+      description:
+        "This website is created to introduce my journey of learning and developing skills in software engineering. As an intern, I want to share the projects I have done, the knowledge I am learning, and my goals to go further in my programming career.",
+      technologies: ["React", "Vercel"],
+      demoLink: "#",
+      codeLink: "#",
+    },
+  ],
 };
 
 export default en;
