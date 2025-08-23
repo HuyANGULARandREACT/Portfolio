@@ -14,6 +14,7 @@ const App = () => {
       document.body.style.backgroundImage = "";
     }
     document.body.style.color = themeStyle.text;
+    document.body.style.paddingTop = "70px"; // Space for fixed navbar
   }, [themeStyle]);
   return <AppRoute />;
 };

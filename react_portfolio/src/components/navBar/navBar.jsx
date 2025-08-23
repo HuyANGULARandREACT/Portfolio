@@ -5,8 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { useLanguage } from "../../context/languageContext";
 import { useTheme } from "../../context/themeContext";
-import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
 import { MdOutlineNightlight } from "react-icons/md";
 import { PiSunLight } from "react-icons/pi";
 import { PiSunHorizonBold } from "react-icons/pi";
@@ -14,16 +12,56 @@ import { PiSunHorizonBold } from "react-icons/pi";
 const NavBar = () => {
   const { t, toggleLanguage, language } = useLanguage();
   const { toggleTheme, themeStyle, theme } = useTheme();
-  const location = useLocation();
+  const [activeSection, setActiveSection] = React.useState("home");
   const navBg = theme === "light" ? "#f8f9fa" : "#23272b";
-  const getLinkStyle = (href) => ({
+
+  React.useEffect(() => {
+    const sections = ["home", "about", "skills", "certificates", "projects"];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navbarHeight = 70; // navbar height
+      const elementPosition = element.offsetTop - navbarHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const getLinkStyle = (sectionId) => ({
     color: themeStyle.text,
-    textDecoration: location.pathname === href ? "underline" : "none",
+    textDecoration: activeSection === sectionId ? "underline" : "none",
     textUnderlineOffset: "4px",
-    fontWeight: location.pathname === href ? "bold" : "normal",
+    fontWeight: activeSection === sectionId ? "bold" : "normal",
+    cursor: "pointer",
   });
+
   return (
-    <Navbar expand="lg" style={{ background: navBg }}>
+    <Navbar
+      expand="lg"
+      className="h-[7vh] fixed-top"
+      style={{ background: navBg, zIndex: 1000 }}
+    >
       <Container>
         <Navbar.Brand href="#home" style={{ color: themeStyle.text }}>
           {t("name")}
@@ -33,25 +71,43 @@ const NavBar = () => {
           {" "}
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto gap-3">
-              <Link to="/" style={getLinkStyle("/")}>
+              <span
+                onClick={() => scrollToSection("home")}
+                style={getLinkStyle("home")}
+              >
                 {t("nav.home")}
-              </Link>
-              <Link to="/about" style={getLinkStyle("/about")}>
+              </span>
+              <span
+                onClick={() => scrollToSection("about")}
+                style={getLinkStyle("about")}
+              >
                 {t("nav.about")}
-              </Link>
-              <Link to="/skills" style={getLinkStyle("/skills")}>
+              </span>
+              <span
+                onClick={() => scrollToSection("skills")}
+                style={getLinkStyle("skills")}
+              >
                 {t("nav.skills")}
-              </Link>
-              <Link to="/certificates" style={getLinkStyle("/certificates")}>
+              </span>
+              <span
+                onClick={() => scrollToSection("certificates")}
+                style={getLinkStyle("certificates")}
+              >
                 {t("nav.certificates")}
-              </Link>
-              
-              <Link to="/projects" style={getLinkStyle("/projects")}>
+              </span>
+
+              <span
+                onClick={() => scrollToSection("projects")}
+                style={getLinkStyle("projects")}
+              >
                 {t("nav.projects")}
-              </Link>
-              <Link to="/contact" style={getLinkStyle("/contact")}>
+              </span>
+              <span
+                onClick={() => scrollToSection("contact")}
+                style={getLinkStyle("contact")}
+              >
                 {t("nav.contact")}
-              </Link>
+              </span>
             </Nav>
           </Navbar.Collapse>
         </div>

@@ -10,8 +10,32 @@ import CodingAnimation from "../../components/CodingAnimation";
 const HomeBio = () => {
   const { t } = useLanguage();
   const { themeStyle } = useTheme();
+
+  React.useEffect(() => {
+    function onVisible(element, callback) {
+      if (!element) return;
+      const observer = new window.IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            callback();
+            observer.disconnect();
+          }
+        });
+      });
+      observer.observe(element);
+    }
+
+    // Delay to ensure elements are rendered
+    setTimeout(() => {
+      const bioText = document.getElementById("bio-text");
+      const bioAvatar = document.getElementById("bio-avatar");
+      if (bioText) onVisible(bioText, () => (bioText.style.opacity = 1));
+      if (bioAvatar) onVisible(bioAvatar, () => (bioAvatar.style.opacity = 1));
+    }, 100);
+  }, []);
+
   return (
-    <Container>
+    <Container className="mb-5">
       <h2 className="text-3xl font-bold mb-4 flex items-center gap-2 mt-5">
         {t("page.aboutme")}
         <span
@@ -24,7 +48,11 @@ const HomeBio = () => {
       </h2>
       <div className="">
         <div className="flex justify-around ">
-          <div style={{ color: themeStyle.text }}>
+          <div
+            style={{ color: themeStyle.text, opacity: 0 }}
+            className="animate-fade-in-left-bio"
+            id="bio-text"
+          >
             <h4 className="p-5">{t("bio")}</h4>
             <div className="flex flex-col items-start gap-2 p-5">
               <div className="flex items-center gap-2">
@@ -57,8 +85,9 @@ const HomeBio = () => {
             </div>
           </div>
           <div
-            className="relative flex items-center justify-center"
-            style={{ marginTop: "0rem" }}
+            className="relative flex items-center justify-center animate-fade-in-right-bio"
+            style={{ marginTop: "0rem", opacity: 0 }}
+            id="bio-avatar"
           >
             <span className="avatar-glow"></span>
             <img
@@ -70,20 +99,34 @@ const HomeBio = () => {
         </div>
       </div>
       <style>{`
-        .avatar-glow {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 36vw;
-          height: 48vh;
-          border-radius: 9999px;
-          background: radial-gradient(circle, rgba(0,123,255,0.35) 0%, rgba(0,123,255,0.10) 60%, transparent 100%);
-          filter: blur(24px);
-          z-index: 1;
-          pointer-events: none;
-        }
-      `}</style>
+.avatar-glow {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 36vw;
+height: 48vh;
+border-radius: 9999px;
+background: radial-gradient(circle, rgba(0,123,255,0.35) 0%, rgba(0,123,255,0.10) 60%, transparent 100%);
+filter: blur(24px);
+z-index: 1;
+pointer-events: none;
+}
+@keyframes fadeInLeftBio {
+0% { opacity: 0; transform: translateX(-60px); }
+100% { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInRightBio {
+0% { opacity: 0; transform: translateX(60px); }
+100% { opacity: 1; transform: translateX(0); }
+}
+.animate-fade-in-left-bio {
+animation: fadeInLeftBio 1s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+.animate-fade-in-right-bio {
+animation: fadeInRightBio 1s cubic-bezier(0.4,0,0.2,1) forwards;
+}
+`}</style>
     </Container>
   );
 };
