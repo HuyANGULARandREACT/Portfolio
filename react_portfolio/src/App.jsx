@@ -1,12 +1,21 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar } from "react-bootstrap";
-import Route from "./routes/appRoute";
 import AppRoute from "./routes/appRoute";
+import { useTheme } from "./context/themeContext";
+
 const App = () => {
-  return (
-    <AppRoute />
-  );
+  const { themeStyle } = useTheme();
+  React.useEffect(() => {
+    if (themeStyle.background.startsWith("linear-gradient")) {
+      document.body.style.background = "";
+      document.body.style.backgroundImage = themeStyle.background;
+    } else {
+      document.body.style.background = themeStyle.background;
+      document.body.style.backgroundImage = "";
+    }
+    document.body.style.color = themeStyle.text;
+  }, [themeStyle]);
+  return <AppRoute />;
 };
 
 export default App;
