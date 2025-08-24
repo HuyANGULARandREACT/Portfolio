@@ -34,6 +34,13 @@ const vi = {
   "validation.phoneRequired": "Số điện thoại là bắt buộc",
   "validation.messageMin": "Tin nhắn phải có ít nhất 10 ký tự",
   "validation.messageRequired": "Tin nhắn là bắt buộc",
+  "footer.description": "Nhà phát triển đam mê tạo ra các giải pháp sáng tạo với công nghệ hiện đại. Luôn háo hức học hỏi và đón nhận những thử thách mới.",
+  "footer.quickLinks": "Liên kết nhanh",
+  "footer.technologies": "Công nghệ",
+  "footer.contact": "Thông tin liên hệ",
+  "footer.rights": "Bảo lưu mọi quyền.",
+  "footer.madeWith": "Được tạo với",
+  "footer.by": "bởi",
 
   certiDetail: "Xem chi tiết",
   greeting:

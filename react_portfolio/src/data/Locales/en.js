@@ -34,6 +34,13 @@ const en = {
   "validation.phoneRequired": "Phone number is required",
   "validation.messageMin": "Message must be at least 10 characters",
   "validation.messageRequired": "Message is required",
+  "footer.description": "Passionate developer creating innovative solutions with modern technologies. Always eager to learn and take on new challenges.",
+  "footer.quickLinks": "Quick Links",
+  "footer.technologies": "Technologies",
+  "footer.contact": "Contact Info",
+  "footer.rights": "All rights reserved.",
+  "footer.madeWith": "Made with",
+  "footer.by": "by",
   certiDetail: "View Detail",
   greeting:
     "Hello! Welcome to my portfolio. This is where I share my journey of learning, training, and growing in the field of software engineering. Here, you will find my personal projects, the skills I am developing, as well as a part of my story on the path to becoming a professional developer.",
