@@ -91,7 +91,7 @@ const HomeBio = () => {
           >
             <span className="avatar-glow"></span>
             <img
-              src="public/image-Photoroom.png"
+              src="/image-Photoroom.png"
               alt="User"
               className="w-[30vw] h-[40vh] rounded-full shadow-lg border-4 border-blue-600 object-cover relative z-10"
             />
