@@ -23,8 +23,10 @@ const en = {
   "contact.messagePlaceholder": "Enter your message",
   "contact.send": "Send Message",
   "contact.sending": "Sending...",
-  "contact.successMessage": "Message sent successfully! I'll get back to you soon.",
-  "contact.errorMessage": "Failed to send message. Please try again or contact me directly.",
+  "contact.successMessage":
+    "Message sent successfully! I'll get back to you soon.",
+  "contact.errorMessage":
+    "Failed to send message. Please try again or contact me directly.",
   "validation.nameMin": "Name must be at least 2 characters",
   "validation.nameRequired": "Name is required",
   "validation.emailInvalid": "Invalid email address",
@@ -34,7 +36,8 @@ const en = {
   "validation.phoneRequired": "Phone number is required",
   "validation.messageMin": "Message must be at least 10 characters",
   "validation.messageRequired": "Message is required",
-  "footer.description": "Passionate developer creating innovative solutions with modern technologies. Always eager to learn and take on new challenges.",
+  "footer.description":
+    "Passionate developer creating innovative solutions with modern technologies. Always eager to learn and take on new challenges.",
   "footer.quickLinks": "Quick Links",
   "footer.technologies": "Technologies",
   "footer.contact": "Contact Info",
@@ -82,6 +85,16 @@ const en = {
       description:
         "This website is created to introduce my journey of learning and developing skills in software engineering. As an intern, I want to share the projects I have done, the knowledge I am learning, and my goals to go further in my programming career.",
       technologies: ["React", "Vercel"],
+      demoLink: "#",
+      codeLink: "#",
+    },
+    {
+      id: 4,
+      name: "Simple Calculator Application",
+      image: "/calculator/simpleCalculator.png",
+      description:
+        "A simple calculator application that performs basic arithmetic operations.",
+      technologies: ["React", "CSS"],
       demoLink: "#",
       codeLink: "#",
     },

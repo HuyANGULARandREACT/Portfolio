@@ -88,6 +88,16 @@ const vi = {
       demoLink: "#",
       codeLink: "#",
     },
+    {
+      id:4,
+      name: "Ứng Dụng Máy Tính Đơn Giản",
+      image: "/calculator/simpleCalculator.png",
+      description:
+        "Một ứng dụng máy tính đơn giản thực hiện các phép toán số học cơ bản.",
+      technologies: ["React", "CSS"],
+      demoLink: "#",
+      codeLink: "#",
+    }
   ],
 };
 
