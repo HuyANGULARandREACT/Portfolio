@@ -23,8 +23,10 @@ const vi = {
   "contact.messagePlaceholder": "Nhập tin nhắn của bạn",
   "contact.send": "Gửi tin nhắn",
   "contact.sending": "Đang gửi...",
-  "contact.successMessage": "Tin nhắn đã được gửi thành công! Tôi sẽ phản hồi sớm nhất có thể.",
-  "contact.errorMessage": "Gửi tin nhắn thất bại. Vui lòng thử lại hoặc liên hệ trực tiếp với tôi.",
+  "contact.successMessage":
+    "Tin nhắn đã được gửi thành công! Tôi sẽ phản hồi sớm nhất có thể.",
+  "contact.errorMessage":
+    "Gửi tin nhắn thất bại. Vui lòng thử lại hoặc liên hệ trực tiếp với tôi.",
   "validation.nameMin": "Tên phải có ít nhất 2 ký tự",
   "validation.nameRequired": "Tên là bắt buộc",
   "validation.emailInvalid": "Địa chỉ email không hợp lệ",
@@ -34,7 +36,8 @@ const vi = {
   "validation.phoneRequired": "Số điện thoại là bắt buộc",
   "validation.messageMin": "Tin nhắn phải có ít nhất 10 ký tự",
   "validation.messageRequired": "Tin nhắn là bắt buộc",
-  "footer.description": "Nhà phát triển đam mê tạo ra các giải pháp sáng tạo với công nghệ hiện đại. Luôn háo hức học hỏi và đón nhận những thử thách mới.",
+  "footer.description":
+    "Nhà phát triển đam mê tạo ra các giải pháp sáng tạo với công nghệ hiện đại. Luôn háo hức học hỏi và đón nhận những thử thách mới.",
   "footer.quickLinks": "Liên kết nhanh",
   "footer.technologies": "Công nghệ",
   "footer.contact": "Thông tin liên hệ",
@@ -89,7 +92,7 @@ const vi = {
       codeLink: "#",
     },
     {
-      id:4,
+      id: 4,
       name: "Ứng Dụng Máy Tính Đơn Giản",
       image: "/calculator/simpleCalculator.png",
       description:
@@ -97,7 +100,17 @@ const vi = {
       technologies: ["React", "CSS"],
       demoLink: "#",
       codeLink: "#",
-    }
+    },
+    {
+      id: 5,
+      name: "MERN Danh sách việc cần làm",
+      image: "/todoList/fullStackTodo.png",
+      description:
+        "Đây là một ứng dụng full-stack MERN (MongoDB, Express, React, Node.js) giúp quản lý công việc và to-do list. Người dùng có thể tạo, chỉnh sửa, xóa và đánh dấu hoàn thành công việc, giao diện thân thiện với chế độ sáng/tối. Backend cung cấp API RESTful để xử lý dữ liệu, lưu trữ trên MongoDB. Frontend sử dụng React + Tailwind để hiển thị và tương tác.",
+      technologies: ["MongoDB", "Express", "React", "Node.js"],
+      demoLink: "#",
+      codeLink: "#",
+    },
   ],
 };
 
