@@ -98,6 +98,16 @@ const en = {
       demoLink: "#",
       codeLink: "#",
     },
+    {
+      id: 5,
+      name: "MERN To Do List",
+      image: "/todoList/fullStackTodo.png",
+      description:
+        "This is a full-stack MERN (MongoDB, Express, React, Node.js) application for managing tasks and to-do lists. Users can create, edit, delete and mark tasks as completed, the interface is friendly with light/dark mode. The backend provides RESTful API to process data, stored on MongoDB. The frontend uses React + Tailwind for display and interaction.",
+      technologies: ["MongoDB", "Express", "React", "Node.js"],
+      demoLink: "#",
+      codeLink: "#",
+    },
   ],
 };
 
