@@ -47,10 +47,22 @@ const HomeBio = () => {
         ></span>
       </h2>
       <div className="">
-        <div className="flex justify-around ">
+        <div className="flex flex-col lg:flex-row justify-around gap-6">
+          <div
+            className="relative flex items-center justify-center animate-fade-in-right-bio lg:w-1/2 "
+            style={{ marginTop: "0rem", opacity: 0 }}
+            id="bio-avatar"
+          >
+            <span className="avatar-glow"></span>
+            <img
+              src="/image-Photoroom.png"
+              alt="User"
+              className="w-[50vw] h-[50vh] lg:w-[20vw] lg:h-[50vh] rounded-full shadow-lg border-4 border-blue-600 object-cover relative z-10"
+            />
+          </div>
           <div
             style={{ color: themeStyle.text, opacity: 0 }}
-            className="animate-fade-in-left-bio"
+            className="animate-fade-in-left-bio lg:w-1/2"
             id="bio-text"
           >
             <h4 className="p-5">{t("bio")}</h4>
@@ -84,18 +96,7 @@ const HomeBio = () => {
               </div>
             </div>
           </div>
-          <div
-            className="relative flex items-center justify-center animate-fade-in-right-bio"
-            style={{ marginTop: "0rem", opacity: 0 }}
-            id="bio-avatar"
-          >
-            <span className="avatar-glow"></span>
-            <img
-              src="/image-Photoroom.png"
-              alt="User"
-              className="w-[30vw] h-[40vh] rounded-full shadow-lg border-4 border-blue-600 object-cover relative z-10"
-            />
-          </div>
+          
         </div>
       </div>
       <style>{`
@@ -104,14 +105,22 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-width: 36vw;
-height: 48vh;
+width: 66vw;
+height: 60vh;
 border-radius: 9999px;
 background: radial-gradient(circle, rgba(0,123,255,0.35) 0%, rgba(0,123,255,0.10) 60%, transparent 100%);
 filter: blur(24px);
-z-index: 1;
+z-index: 0;
 pointer-events: none;
 }
+
+@media (min-width: 1024px) {
+  .avatar-glow {
+    width: 36vw;
+    height: 60vh;
+  }
+}
+
 @keyframes fadeInLeftBio {
 0% { opacity: 0; transform: translateX(-60px); }
 100% { opacity: 1; transform: translateX(0); }
