@@ -13,6 +13,7 @@ const HomeCertificate = () => {
     "Coursera EHQ7N3VH8QFN.pdf",
     "Coursera JUX0NZXL8PK3.pdf",
     "f443706d-d8e7-4286-97c0-621472fc0cfa.pdf",
+    "Coursera VYUA2QPU9D4H.pdf",
   ];
 
   useEffect(() => {
