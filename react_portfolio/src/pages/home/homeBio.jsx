@@ -70,10 +70,10 @@ const HomeBio = () => {
               <div className="flex items-center gap-2">
                 <FaGithub />
                 <Link
-                  to="https://github.com/nguyen-gia-huy"
+                  to="https://github.com/HuyANGULARandREACT"
                   style={{ color: themeStyle.text }}
                 >
-                  https://github.com/nguyen-gia-huy
+                  https://github.com/HuyANGULARandREACT
                 </Link>
               </div>
               <div className="flex items-center gap-2">
@@ -96,7 +96,6 @@ const HomeBio = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
       <style>{`
