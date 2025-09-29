@@ -93,11 +93,11 @@ const vi = {
     },
     {
       id: 4,
-      name: "Ứng Dụng Máy Tính Đơn Giản",
-      image: "/calculator/simpleCalculator.png",
+      name: "Angular Cellphones Clone",
+      image: "/cellPhonesClone/celphonesClone.png",
       description:
-        "Một ứng dụng máy tính đơn giản thực hiện các phép toán số học cơ bản.",
-      technologies: ["React", "CSS"],
+        "Dự án Cellphones Clone được xây dựng bằng Angular nhằm mô phỏng lại giao diện và một số tính năng chính của trang web Cellphones. Ứng dụng tận dụng NG-Zorro (Ant Design for Angular) để tạo ra các component UI đẹp mắt, nhất quán và dễ sử dụng.",
+      technologies: ["Angular", "JSON Server", "NG-Zoro"],
       demoLink: "#",
       codeLink: "#",
     },

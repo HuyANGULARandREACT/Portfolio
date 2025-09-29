@@ -90,11 +90,11 @@ const en = {
     },
     {
       id: 4,
-      name: "Simple Calculator Application",
-      image: "/calculator/simpleCalculator.png",
+      name: "Angular Cellphones Clone",
+      image: "/cellPhonesClone/celphonesClone.png",
       description:
-        "A simple calculator application that performs basic arithmetic operations.",
-      technologies: ["React", "CSS"],
+        "The Cellphones Clone project is built using Angular to replicate the look and feel of the Cellphones website and some of its key features. The application leverages NG-Zorro (Ant Design for Angular) to create beautiful, consistent, and easy-to-use UI components.",
+      technologies: ["Angular", "JSON Server", "NG-Zoro"],
       demoLink: "#",
       codeLink: "#",
     },
