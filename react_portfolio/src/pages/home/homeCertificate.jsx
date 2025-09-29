@@ -14,6 +14,7 @@ const HomeCertificate = () => {
     "Coursera JUX0NZXL8PK3.pdf",
     "f443706d-d8e7-4286-97c0-621472fc0cfa.pdf",
     "Coursera VYUA2QPU9D4H.pdf",
+    "CertificateOfCompletion_Build AI Agents and Automate Workflows with n8n.pdf",
   ];
 
   useEffect(() => {
