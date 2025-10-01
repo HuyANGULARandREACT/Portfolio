@@ -80,6 +80,16 @@ const en = {
     },
     {
       id: 3,
+      name: "Electric Vehicle Charging Station Management System",
+      image: "/EV/ev.png",
+      description:
+        "EV Charging Station Management System is a comprehensive management system for electric vehicle charging stations. The system provides a platform for drivers to easily search, book and pay for charging services; charging station staff to monitor, support and record payments on the spot; and administrators to manage the entire station, users, service packages, as well as track revenue and usage reports.",
+      technologies: ["React", "JSON Server", "Tailwind"],
+      demoLink: "#",
+      codeLink: "#",
+    },
+    {
+      id: 4,
       name: "Portfolio Website",
       image: "/portfolio/portfolioHomePage.png",
       description:
@@ -89,7 +99,7 @@ const en = {
       codeLink: "#",
     },
     {
-      id: 4,
+      id: 5,
       name: "Angular Cellphones Clone",
       image: "/cellPhonesClone/celphonesClone.png",
       description:
@@ -99,7 +109,7 @@ const en = {
       codeLink: "#",
     },
     {
-      id: 5,
+      id: 6,
       name: "MERN To Do List",
       image: "/todoList/fullStackTodo.png",
       description:

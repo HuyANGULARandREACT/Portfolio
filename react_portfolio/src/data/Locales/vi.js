@@ -83,6 +83,16 @@ const vi = {
     },
     {
       id: 3,
+      name: "Phần mềm quản lý trạm sạc xe điện",
+      image: "/EV/ev.png",
+      description:
+        "EV Charging Station Management System là một hệ thống quản lý toàn diện cho các trạm sạc xe điện. Hệ thống cung cấp nền tảng giúp tài xế dễ dàng tìm kiếm, đặt chỗ và thanh toán dịch vụ sạc; nhân viên trạm sạc theo dõi, hỗ trợ và ghi nhận thanh toán tại chỗ; và quản trị viên quản lý toàn bộ trạm, người dùng, gói dịch vụ, cũng như theo dõi báo cáo doanh thu và tần suất sử dụng.",
+      technologies: ["React", "JSON Server", "Tailwind"],
+      demoLink: "#",
+      codeLink: "#",
+    },
+    {
+      id: 4,
       name: "Website Portfolio",
       image: "/portfolio/portfolioHomePage.png",
       description:
@@ -92,7 +102,7 @@ const vi = {
       codeLink: "#",
     },
     {
-      id: 4,
+      id: 5,
       name: "Angular Cellphones Clone",
       image: "/cellPhonesClone/celphonesClone.png",
       description:
@@ -102,7 +112,7 @@ const vi = {
       codeLink: "#",
     },
     {
-      id: 5,
+      id: 6,
       name: "MERN Danh Sách Việc Cần Làm",
       image: "/todoList/fullStackTodo.png",
       description:
