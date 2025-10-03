@@ -5,7 +5,10 @@ const en = {
   "nav.certificates": "Certificates",
   "nav.projects": "Projects",
   "nav.contact": "Contact",
+  "nav.workExp": "Work Experience",
   "page.aboutme": "About Me",
+  "page.workExp": "Work Experience",
+
   "page.certificate": "Certificate",
   "page.skills": "Skills",
   "nav.link": "Link",
@@ -117,6 +120,38 @@ const en = {
       technologies: ["MongoDB", "Express", "React", "Node.js"],
       demoLink: "#",
       codeLink: "#",
+    },
+  ],
+  workExperience: [
+    {
+      id: 1,
+      company: "FPT Software Ho Chi Minh",
+      position: "Angular Intern",
+      duration: "September 16, 2024 - Present",
+      onboardDate: "September 16, 2024",
+      location: "Ho Chi Minh City, Vietnam",
+      description:
+        "Working as an Angular intern, developing web applications using Angular framework and learning modern frontend development practices.",
+      responsibilities: [
+        "Developing user interfaces using Angular framework",
+        "Learning and applying Angular best practices",
+        "Collaborating with team members on web development projects",
+        "Participating in code reviews and team meetings",
+        "Working with RESTful APIs and backend integration",
+      ],
+      technologies: [
+        "Angular",
+        "TypeScript",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Git",
+      ],
+      achievements: [
+        "Successfully onboarded and integrated into the development team",
+        "Learning Angular development lifecycle and best practices",
+        "Contributing to real-world projects under senior developer guidance",
+      ],
     },
   ],
 };

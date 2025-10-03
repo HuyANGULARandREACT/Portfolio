@@ -66,30 +66,42 @@ const HomeBio = () => {
             id="bio-text"
           >
             <h4 className="p-5">{t("bio")}</h4>
-            <div className="flex flex-col items-start gap-2 p-5">
-              <div className="flex items-center gap-2">
-                <FaGithub />
+            <div className="flex flex-col items-start gap-3 p-5">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                <div className="flex items-center gap-2">
+                  <FaGithub />
+                  <span className="hidden sm:inline">GitHub:</span>
+                </div>
                 <Link
                   to="https://github.com/HuyANGULARandREACT"
                   style={{ color: themeStyle.text }}
+                  className="break-all hover:underline"
                 >
                   https://github.com/HuyANGULARandREACT
                 </Link>
               </div>
-              <div className="flex items-center gap-2">
-                <FaFacebook />
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                <div className="flex items-center gap-2">
+                  <FaFacebook />
+                  <span className="hidden sm:inline">Facebook:</span>
+                </div>
                 <Link
                   to="https://www.facebook.com/giahuykakaha"
                   style={{ color: themeStyle.text }}
+                  className="break-all hover:underline"
                 >
                   https://www.facebook.com/giahuykakaha
                 </Link>
               </div>
-              <div className="flex items-center gap-2">
-                <SiCoursera />
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                <div className="flex items-center gap-2">
+                  <SiCoursera />
+                  <span className="hidden sm:inline">Coursera:</span>
+                </div>
                 <Link
                   to="https://www.coursera.org/user/aa2e503bd6e8da3d486140157fd24c65"
                   style={{ color: themeStyle.text }}
+                  className="break-all hover:underline"
                 >
                   https://www.coursera.org/user/aa2e503bd6e8da3d486140157fd24c65
                 </Link>

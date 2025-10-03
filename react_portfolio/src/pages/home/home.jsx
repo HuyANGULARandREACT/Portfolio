@@ -10,6 +10,7 @@ import CodingAnimation from "../../components/CodingAnimation";
 import HomeProjects from "./homeProjects";
 import useLazyLoad from "../../hooks/useLazyLoad";
 import HomeContact from "./homeContact";
+import WorkExp from "./workExp";
 
 const Home = () => {
   const { t } = useLanguage();
@@ -20,7 +21,7 @@ const Home = () => {
   const shouldLoadCertificates = useLazyLoad("certificates", 0.2);
   const shouldLoadProjects = useLazyLoad("projects", 0.2);
   const shouldLoadContact = useLazyLoad("contact", 0.2);
-
+  const shouldLoadWorkExp = useLazyLoad("workExp",0.2)
   return (
     <Container>
       <Container className="mt-20 mb-50" id="home">
@@ -294,6 +295,22 @@ const Home = () => {
             }}
           >
             Loading About...
+          </div>
+        )}
+      </div>
+      <div id="workExp" style={{ minHeight: "60vh" }}>
+        {shouldLoadWorkExp ? (
+          <WorkExp />
+        ) : (
+          <div
+            style={{
+              height: "600px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            Loading Work Experience...
           </div>
         )}
       </div>

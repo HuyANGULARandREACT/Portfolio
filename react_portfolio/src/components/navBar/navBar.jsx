@@ -2,16 +2,13 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import { useLanguage } from "../../context/languageContext";
 import { useTheme } from "../../context/themeContext";
-import { MdOutlineNightlight } from "react-icons/md";
-import { PiSunLight } from "react-icons/pi";
-import { PiSunHorizonBold } from "react-icons/pi";
+
 
 const NavBar = () => {
   const { t, toggleLanguage, language } = useLanguage();
-  const { toggleTheme, themeStyle, theme } = useTheme();
+  const {  themeStyle, theme } = useTheme();
   const [activeSection, setActiveSection] = React.useState("home");
   const navBg = theme === "light" ? "#f8f9fa" : "#23272b";
 
@@ -19,6 +16,7 @@ const NavBar = () => {
     const sections = [
       "home",
       "about",
+      "work experience",
       "skills",
       "certificates",
       "projects",
@@ -110,6 +108,12 @@ const NavBar = () => {
                 style={getLinkStyle("about")}
               >
                 {t("nav.about")}
+              </span>
+              <span
+                onClick={() => scrollToSection("work experience")}
+                style={getLinkStyle("work experience")}
+              >
+                {t("nav.workExp")}
               </span>
               <span
                 onClick={() => scrollToSection("skills")}
