@@ -127,8 +127,8 @@ const en = {
       id: 1,
       company: "FPT Software Ho Chi Minh",
       position: "Angular Intern",
-      duration: "September 16, 2024 - Present",
-      onboardDate: "September 16, 2024",
+      duration: "September 16, 2025 - Present",
+      onboardDate: "September 16, 2025",
       location: "Ho Chi Minh City, Vietnam",
       description:
         "Working as an Angular intern, developing web applications using Angular framework and learning modern frontend development practices.",

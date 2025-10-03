@@ -129,8 +129,8 @@ const vi = {
       id: 1,
       company: "FPT Software Hồ Chí Minh",
       position: "Thực tập sinh Angular",
-      duration: "16 tháng 9, 2024 - Hiện tại",
-      onboardDate: "16 tháng 9, 2024",
+      duration: "16 tháng 9, 2025 - Hiện tại",
+      onboardDate: "16 tháng 9, 2025",
       location: "Thành phố Hồ Chí Minh, Việt Nam",
       description:
         "Làm việc với vai trò thực tập sinh Angular, phát triển ứng dụng web sử dụng framework Angular và học hỏi các thực hành phát triển frontend hiện đại.",
