@@ -5,15 +5,17 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { LanguageProvider } from "./context/languageContext";
 import { ThemeProvider } from "./context/themeContext";
-
+import { Analytics } from "@vercel/analytics/react";
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <LanguageProvider>
-        <ThemeProvider>
-          <App />
-        </ThemeProvider>
-      </LanguageProvider>
-    </BrowserRouter>
-  </StrictMode>
+  <Analytics>
+    <StrictMode>
+      <BrowserRouter>
+        <LanguageProvider>
+          <ThemeProvider>
+            <App />
+          </ThemeProvider>
+        </LanguageProvider>
+      </BrowserRouter>
+    </StrictMode>
+  </Analytics>
 );
