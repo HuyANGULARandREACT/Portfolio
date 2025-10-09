@@ -7,15 +7,13 @@ import { LanguageProvider } from "./context/languageContext";
 import { ThemeProvider } from "./context/themeContext";
 import { Analytics } from "@vercel/analytics/react";
 createRoot(document.getElementById("root")).render(
-  <Analytics>
-    <StrictMode>
-      <BrowserRouter>
-        <LanguageProvider>
-          <ThemeProvider>
-            <App />
-          </ThemeProvider>
-        </LanguageProvider>
-      </BrowserRouter>
-    </StrictMode>
-  </Analytics>
+  <StrictMode>
+    <BrowserRouter>
+      <LanguageProvider>
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
+      </LanguageProvider>
+    </BrowserRouter>
+  </StrictMode>
 );
