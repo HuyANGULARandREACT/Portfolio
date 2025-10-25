@@ -133,7 +133,7 @@ const vi = {
       onboardDate: "16 tháng 9, 2025",
       location: "Thành phố Hồ Chí Minh, Việt Nam",
       description:
-        "Làm việc với vai trò thực tập sinh Angular, phát triển ứng dụng web sử dụng framework Angular và học hỏi các thực hành phát triển frontend hiện đại.",
+        "Làm việc với vai trò thực tập sinh Angular, phát triển ứng dụng web sử dụng framework Angular và học hỏi các thực hành phát triển frontend hiện đại. ",
       responsibilities: [
         "Phát triển giao diện người dùng sử dụng framework Angular",
         "Học hỏi và áp dụng các best practices của Angular",
@@ -141,18 +141,32 @@ const vi = {
         "Tham gia vào việc review code và các cuộc họp nhóm",
         "Làm việc với RESTful APIs và tích hợp backend",
       ],
-      technologies: [
-        "Angular",
-        "TypeScript",
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "Git",
-      ],
+
       achievements: [
         "Thành công trong việc onboard và hòa nhập vào nhóm phát triển",
         "Học hỏi quy trình phát triển Angular và các best practices",
         "Đóng góp vào các dự án thực tế dưới sự hướng dẫn của senior developer",
+      ],
+    },
+    {
+      id: 2,
+      company: "Kyna English",
+      position: "Giáo viên tiếng anh",
+      duration: "24 tháng 10, 2025 - Hiện tại",
+      onboardDate: "24 tháng 10",
+      location: "Thành phố Hồ Chí Minh, Việt Nam",
+      description:
+        "Làm việc với vai trò giáo viên tiếng anh, giảng dạy nhiều đối tượng (thiếu nhi, học sinh). Thực hiện các buổi ôn luyện và luyện kỹ năng giao tiếp, ạo môi trường học an toàn, thân thiện, khuyến khích học viên tự tin sử dụng tiếng Anh. ",
+      responsibilities: [
+        "Dạy lớp cho học sinh thông qua hệ thống lớp học ảo trực tuyến với tài liệu bài học được cung cấp",
+        "Điền vào báo cáo đánh giá học sinh sau giờ học",
+        "Cá nhân hóa các chiến lược giảng dạy cho từng sinh viên dựa trên đề xuất của cán bộ học vụ",
+      ],
+
+      achievements: [
+        "Phát triển bộ tài liệu bổ trợ giúp tăng mức độ tương tác trong lớp và hỗ trợ việc ôn luyện ngoài giờ học.",
+        "Áp dụng các bài đánh giá định kỳ và báo cáo tiến độ chi tiết, giúp xác định nhanh lỗ hổng kiến thức và điều chỉnh lộ trình học cho từng học viên.",
+        "Tùy biến chiến lược giảng dạy cho học viên có nhu cầu đặc thù (chuẩn bị thi, rèn kỹ năng giao tiếp)",
       ],
     },
   ],

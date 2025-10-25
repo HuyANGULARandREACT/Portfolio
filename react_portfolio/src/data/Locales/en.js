@@ -153,6 +153,27 @@ const en = {
         "Contributing to real-world projects under senior developer guidance",
       ],
     },
+    {
+      id: 2,
+      company: "Kyna English",
+      position: "English Teacher",
+      duration: "October 24, 2025 - Present",
+      onboardDate: "October 24",
+      location: "Ho Chi Minh City, Vietnam",
+      description:
+        "Work as an English teacher, teaching a variety of subjects (children, students). Conduct review sessions and practice communication skills, create a safe and friendly learning environment, encourage students to confidently use English. ",
+      responsibilities: [
+        "Teach students through the online virtual classroom system with provided lesson materials",
+        "Fill out student assessment reports after class",
+        "Personalize teaching strategies for each student based on recommendations from academic staff",
+      ],
+      technologies: ["none"],
+      achievements: [
+        "Develop a set of supplementary materials to increase interaction in class and support after-school review learning.",
+        "Apply periodic assessments and detailed progress reports, helping to quickly identify knowledge gaps and adjust the learning path for each student.",
+        "Customize teaching strategies for students with special needs (test preparation, communication skills training)",
+      ],
+    },
   ],
 };
 

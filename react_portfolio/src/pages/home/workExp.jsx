@@ -40,7 +40,7 @@ const WorkExp = () => {
   }, []);
 
   return (
-    <Container className="mt-5 mb-5">
+    <Container className="mt-15 mb-15">
       <div ref={workExpRef}>
         <h2 className="text-3xl font-bold mb-8 flex items-center gap-2">
           {t("page.workExp")}
@@ -53,7 +53,7 @@ const WorkExp = () => {
           ></span>
         </h2>
 
-        <div className="space-y-8">
+        <div className="space-y-8 mt-15 ">
           {workExperience.map((work) => (
             <div
               key={work.id}
@@ -158,7 +158,7 @@ const WorkExp = () => {
                 </ul>
               </div>
 
-              {/* Technologies */}
+              {/* Technologies
               <div className="mb-6">
                 <h5 className="text-lg font-semibold text-white mb-3 flex items-center gap-2">
                   <svg
@@ -173,7 +173,7 @@ const WorkExp = () => {
                     : "Technologies Used"}
                 </h5>
                 <div className="flex flex-wrap gap-2">
-                  {work.technologies.map((tech, index) => (
+                  {work.technologies?.map((tech, index) => (
                     <span
                       key={index}
                       className="px-3 py-1 bg-blue-800 text-blue-200 rounded-full text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
@@ -182,7 +182,7 @@ const WorkExp = () => {
                     </span>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               {/* Achievements */}
               <div>
