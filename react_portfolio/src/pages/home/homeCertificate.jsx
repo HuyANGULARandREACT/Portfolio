@@ -16,6 +16,7 @@ const HomeCertificate = () => {
     "chung_nhan_hoc_bong.pdf",
     "Coursera VYUA2QPU9D4H.pdf",
     "CertificateOfCompletion_Build AI Agents and Automate Workflows with n8n.pdf",
+    "EF SET Certificate.pdf"
   ];
 
   useEffect(() => {
