@@ -161,7 +161,7 @@ const en = {
       onboardDate: "October 24",
       location: "Ho Chi Minh City, Vietnam",
       description:
-        "Work as an English teacher, teaching a variety of subjects (children, students). Conduct review sessions and practice communication skills, create a safe and friendly learning environment, encourage students to confidently use English. ",
+        "Work as an English teacher, teaching a variety of subjects (children, students, adults). Conduct review sessions and practice communication skills, create a safe and friendly learning environment, encourage students to confidently use English. ",
       responsibilities: [
         "Teach students through the online virtual classroom system with provided lesson materials",
         "Fill out student assessment reports after class",

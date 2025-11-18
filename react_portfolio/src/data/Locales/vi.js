@@ -156,7 +156,7 @@ const vi = {
       onboardDate: "24 tháng 10",
       location: "Thành phố Hồ Chí Minh, Việt Nam",
       description:
-        "Làm việc với vai trò giáo viên tiếng anh, giảng dạy nhiều đối tượng (thiếu nhi, học sinh). Thực hiện các buổi ôn luyện và luyện kỹ năng giao tiếp, ạo môi trường học an toàn, thân thiện, khuyến khích học viên tự tin sử dụng tiếng Anh. ",
+        "Làm việc với vai trò giáo viên tiếng anh, giảng dạy nhiều đối tượng (thiếu nhi, học sinh, người lớn). Thực hiện các buổi ôn luyện và luyện kỹ năng giao tiếp, ạo môi trường học an toàn, thân thiện, khuyến khích học viên tự tin sử dụng tiếng Anh. ",
       responsibilities: [
         "Dạy lớp cho học sinh thông qua hệ thống lớp học ảo trực tuyến với tài liệu bài học được cung cấp",
         "Điền vào báo cáo đánh giá học sinh sau giờ học",
