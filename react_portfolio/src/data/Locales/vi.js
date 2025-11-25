@@ -50,7 +50,7 @@ const vi = {
   certiDetail: "Xem chi tiết",
   greeting:
     "Xin chào! Chào mừng đến với portfolio của mình. Đây là nơi tôi chia sẻ về hành trình học tập, rèn luyện và phát triển trong lĩnh vực công nghệ phần mềm. Tại đây, bạn sẽ tìm thấy những dự án cá nhân, các kỹ năng mà mình đang trau dồi, cũng như một phần câu chuyện của mình trên con đường trở thành developer chuyên nghiệp.",
-  bio: "Mình tên là Nguyễn Gia Huy, mình hiện tại đang là sinh viên tại đại học FPT, chuyên ngành kỹ thuật phần mềm. Mình quan tâm đến quan tâm đến công nghệ web hiện đại, đặc biệt là ReactJS và UI/UX.Mục tiêu của mình là trở thành một lập trình viên Frontend giỏi, có thể xây dựng những sản phẩm chất lượng, dễ sử dụng và mang lại giá trị cho người dùng.",
+  bio: "Tôi tên là Nguyễn Gia Huy. Hiện tôi là sinh viên ngành Kỹ thuật Phần mềm tại Đại học FPT, rất quan tâm đến Phân tích Kinh doanh (Business Analysis) và cách công nghệ có thể giải quyết các vấn đề kinh doanh thực tế. Tôi đặt mục tiêu trở thành một Chuyên viên Phân tích Kinh doanh (Business Analyst) có năng lực, hiểu rõ nhu cầu của người dùng, phân tích yêu cầu và hợp tác hiệu quả với các nhóm phát triển để xây dựng các giải pháp phần mềm giá trị, lấy người dùng làm trọng tâm.",
   title: "Lập trình viên Frontend",
   name: "Nguyễn Gia Huy",
   projects: [

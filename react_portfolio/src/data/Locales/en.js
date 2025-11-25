@@ -50,7 +50,7 @@ const en = {
   certiDetail: "View Detail",
   greeting:
     "Hello! Welcome to my portfolio. This is where I share my journey of learning, training, and growing in the field of software engineering. Here, you will find my personal projects, the skills I am developing, as well as a part of my story on the path to becoming a professional developer.",
-  bio: "My name is Nguyen Gia Huy, I am currently a student at FPT University, majoring in software engineering. I am interested in modern web technology, especially ReactJS and UI/UX. My goal is to become a good Frontend programmer, able to build quality products, easy to use and bring value to users.",
+  bio: "My name is Nguyen Gia Huy. I am currently a Software Engineering student at FPT University with a strong interest in Business Analysis and how technology can solve real business problems. I aim to become a competent Business Analyst who can understand user needs, analyze requirements, and collaborate effectively with development teams to build valuable, user-centric software solutions.",
   title: "Frontend Developer",
   name: "Nguyen Gia Huy",
   projects: [
