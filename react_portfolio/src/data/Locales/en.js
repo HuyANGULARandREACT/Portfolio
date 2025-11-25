@@ -157,8 +157,8 @@ const en = {
       id: 2,
       company: "Kyna English",
       position: "English Teacher",
-      duration: "October 24, 2025 - Present",
-      onboardDate: "October 24",
+      duration: "June 24, 2025 - Present",
+      onboardDate: "June 24",
       location: "Ho Chi Minh City, Vietnam",
       description:
         "Work as an English teacher, teaching a variety of subjects (children, students, adults). Conduct review sessions and practice communication skills, create a safe and friendly learning environment, encourage students to confidently use English. ",
