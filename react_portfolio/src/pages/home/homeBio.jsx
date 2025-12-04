@@ -2,7 +2,7 @@ import React from "react";
 import { useLanguage } from "../../context/languageContext";
 import { useTheme } from "../../context/themeContext";
 import { Container } from "react-bootstrap";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { FaFacebook } from "react-icons/fa";
 import { SiCoursera } from "react-icons/si";
@@ -77,7 +77,7 @@ const HomeBio = () => {
                   style={{ color: themeStyle.text }}
                   className="break-all hover:underline"
                 >
-                  https://github.com/HuyANGULARandREACT
+                  Go to my GitHub
                 </Link>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center gap-2">
@@ -90,7 +90,7 @@ const HomeBio = () => {
                   style={{ color: themeStyle.text }}
                   className="break-all hover:underline"
                 >
-                  https://www.facebook.com/giahuykakaha
+                  Go to my FaceBook
                 </Link>
               </div>
               <div className="flex flex-col sm:flex-row sm:items-center gap-2">
@@ -103,7 +103,20 @@ const HomeBio = () => {
                   style={{ color: themeStyle.text }}
                   className="break-all hover:underline"
                 >
-                  https://www.coursera.org/user/aa2e503bd6e8da3d486140157fd24c65
+                  Go to my Coursera
+                </Link>
+              </div>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
+                <div className="flex items-center gap-2">
+                  <FaLinkedin />
+                  <span className="hidden sm:inline">Linkedin:</span>
+                </div>
+                <Link
+                  to="https://www.linkedin.com/in/huyng-h3112005/"
+                  style={{ color: themeStyle.text }}
+                  className="break-all hover:underline"
+                >
+                  Go to my Linkedin
                 </Link>
               </div>
             </div>
